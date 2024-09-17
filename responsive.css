@@ -1,0 +1,375 @@
+/* Extra Large screens */
+@media (min-width: 1440px) and (max-width: 1660px) {
+    .responsive-container {
+        max-width: 1440px; /* Container width between 1440px and 1660px */
+    }
+    .left-btn {
+        color: white;
+        background-color: var(--sec-clr);
+        border-radius: 50px;
+        padding: 8px 78px !important;
+}
+}
+
+/* Large screens */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+    .responsive-container {
+        max-width: 1200px; /* Container width between 1200px and 1439.98px */
+    }
+ 
+}
+
+/* Medium screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .responsive-container {
+        max-width: 960px; /* Container width between 992px and 1199.98px */
+    }
+    .hero-content h1 {
+        font-size: 65px !important;
+        line-height: 62px !important;}
+    .left-btn {
+        font-size: 16px !important;
+ }
+ .right-btn{font-size: 16px !important;
+ 
+ }
+ .hero-button{padding: 18px 32px !important;}
+ .hero-image{
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 1% 100%) !important;
+ }
+ .Necesitas-img {
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 95% 0, 77% 100%, 0% 100%);
+    height: 100%;
+    padding: 0px;
+}
+}
+
+/* Small screens */
+@media(max-width:992px){
+    /* .hero-image{display: none !important;} */
+    .joining-body{padding-block: 20px !important;}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive-container {
+        max-width: 720px; /* Container width between 768px and 991.98px */
+    }
+    .hero-content h1 {
+        font-size: 65px !important;
+        line-height: 62px !important;}
+    .Necesitas-img-box {
+        background: url(images/carlosbecerril_home_maintenance_8b9cf0a9-bbf9-44e2-925a-93b9e9c267e6.png);
+        background-position: center 30%;
+        background-repeat: no-repeat;
+        background-size: 170% !important;
+    }
+    .hero-content{padding: 20px !important;
+    }
+    .left-btn {
+        font-size: 13px !important;
+ }
+ .left-number{font-size: 18px!
+    ;}
+    .need-number .form-select{padding: 3px 40px !important;top: 52px !important;}
+ .right-btn{font-size: 13px !important;
+ 
+ }
+ .hero-button{padding: 14px 15px !important;}
+ .hero-image {
+    background: url(images/carlosbecerril_latin_family_dad_wearing_blue_shirt_in_the_livin_f555546d-5c53-43c1-a373-342d32bfa0da-2.png);
+    background-position: center right 30% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Necesitas-content{padding: 0px !important;}
+.left-jioning-number h4{font-size: 1.5rem !important; word-spacing: normal !important;}
+/* .jioning-form {padding: 14px 30px !important;} */
+.main-jioning-number {
+font-size: 1.2rem !important;
+}
+.jion-btn{margin-top: 5px !important;padding: 16px 60px !important;}
+.footer-nav-link .nav-link{font-weight: 500 !important;font-size: 18px !important;}
+.footer{margin-top: 50px !important;}
+
+#form-layout-style .inner1-number input{width: 70% !important;}        
+#form3-child > div.col-md-6.page-1-form3-A > div.inner-form-number label{font-size: 16px !important;}
+
+
+#form-three-child > div.col-md-6.page-1-form3-A > div.inner-form-batch label{font-size: 16px !important;}
+#form-three-child > div.col-md-6.page-1-form3-B > div.inner-form-Entity label{font-size: 16px !important;}
+.how-works{padding: 20px !important;}
+
+
+
+}
+
+/* Extra small screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .responsive-container {
+        max-width: 540px; /* Container width between 576px and 767.98px */
+    }
+    .hero-content h1 {
+        font-size: 58px !important;
+        line-height: 62px !important;}
+    .left-btn {
+        font-size: 14px !important;
+ }
+ .right-btn{font-size: 14px !important;
+ 
+ }
+ .Necesitas-content{padding: 0px !important;}
+ .Blog{height: 400px !important;}
+ .left-jioning-number h4{font-size: 1.5rem !important; word-spacing: normal !important;}
+    .jioning-form {
+        padding: 14px 30px !important;
+        height: 54px !important;
+        width: 220px !important;
+        font-size: 20px !important;
+    }
+.main-jioning-number {
+font-size: 1.2rem !important;
+}
+.jion-btn {
+    margin-top: 5px !important;
+    padding: 9px 51px !important;
+    display: block !important;
+    margin: auto !important;
+    margin-block: 20px !important;
+
+}
+.footer-nav-link{justify-content: center !important;column-gap: 20px !important;text-align: center !important;}
+.footer-nav-link .nav-link{font-weight: 500 !important;font-size: 16px !important;}
+.how-works{padding: 20px 14px !important;}
+}
+
+@media (max-width:768px) {
+    .Necesitas-img{display: none !important;
+      
+    }
+    .title-left {
+    
+        clip-path: polygon(0 0, 100% 0, 39% 219%, 0% 100%);
+       
+}
+.left-btn {
+    font-size: 14px !important;
+}
+.right-btn{font-size: 14px !important;
+
+}
+.hero-image{display: none !important;}
+.hero-content{padding: 30px !important;
+}
+.hero-button {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 49px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+}
+.buttons-container{margin-top: 60px !important;}
+.need-number .form-select{padding: 3px 10px !important;width: 122px !important;}
+.work-carousel .work-card{min-height: 212px !important;}
+.footer-body-content p{color: var(--border-clr);text-align: center !important;font-size: 16px;line-height: 20px !important;}
+.owl-nav {
+    position: absolute !important;
+    top: -60px !important;
+    right: 25px !important;
+    width: 100px !important;
+}
+.border-center{border: none !important;}
+.bolg-item {padding: 10px 10px !important;}
+
+}
+
+
+/* Very small screens */
+@media (max-width: 575.98px) {
+    .footer-body-content p{color: var(--border-clr);text-align: center !important;font-size: 18px !important;line-height: 16px !important;}
+    .responsive-container {
+        max-width: 100%; /* Full width for very small screens */
+        padding: 0 10px; /* Less padding on smaller screens */
+    }
+    .hero-button{padding: 10px 20px!important;font-size: 14px !important;font-weight: 500 !important;}
+    .title-left {
+        clip-path: polygon(0 0, 81% 0, 44% 100%, 0% 100%) !important;
+       
+}
+.left-number{font-size: 16px !important;}
+.left-need-number{flex-grow: 0 !important;}
+.need-number .form-select {
+    padding: 3px 10px !important;
+    width: 180px !important;
+    height: 60px !important;
+    /* font-size: 77px; */
+    font-size: 30px !important;
+}
+.Necesitas-content{padding: 3px !important;}
+.left-btn {
+    font-size: 12px !important;
+}
+.right-btn{font-size: 12px !important;padding: 14px 20px !important;
+
+}
+.hero-content{padding: 10px !important;
+   }
+.hero-content h1 {
+    font-size: 54px !important;
+    line-height: 56px !important;}
+    .hero-button {
+        background-color: #00aaff;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 49px;
+        border-radius: 50px;
+        font-size: 18px;
+        margin-top: 20px;
+        display: block;
+    }
+    #Necesitas-id{height: 210px !important;}
+    .left-jioning-number h4{font-size: 2.5rem !important; word-spacing: normal !important;}
+.jioning-form {padding: 14px 30px !important;
+    height: 54px !important;
+    width: 220px !important;
+    font-size: 20px !important;
+}
+.main-jioning-number {
+font-size: 1.2rem !important;
+}
+.jion-btn{margin-top: 5px !important;padding: 16px 60px !important;}
+.jion-btn {
+    margin-top: 5px !important;
+    padding: 9px 51px !important;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+.footer-nav-link{flex-direction: column !important;font-size: 22px !important;row-gap: 30px !important;}
+.footer-body-content p{line-height: 20px !important;font-size: 16px !important;}
+.adds{display: grid !important;place-items: center !important;padding-inline: 14px !important;}
+.left-need-number{border:none !important;}
+.left-need-number p{display: none !important;}
+.Necesitas-content-body h4{font-size: 46px !important;}
+.main-jioning-number{display: none;}
+.footer{display: none !important;}
+.mbl-footer{display: block !important;
+   }
+#form-layout-style input{width: 100% !important;}
+.how-works{padding: 14px 8px !important}
+
+}
+
+
+
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .owl-carousel.owl-drag .owl-item{display: flex !important;justify-content: center !important;padding: 5px !important;}
+
+    .owl-carousel .item {
+        height: 150px !important; /* Set a fixed height */
+        overflow: hidden !important; /* Hide any overflow */
+    }
+    .Testimonial-card{min-height: 400px !important;}
+    .bolg-item{min-height: 250px !important;}
+
+}
+@media (max-width:475px) {
+    .bolg-item{max-height:350px !important;}
+    p{font-size: 16px !important;line-height: 20px !important;}
+    li{font-size: 16px !important;line-height: 20px !important;}
+    .Testimonial{height: 460px !important;}
+    .card-content .intro{font-weight: 400 !important;}
+    .hero-content h1 {
+        font-size: 38px !important;
+        line-height: 40px !important;
+    }
+    /* .container{padding: 2px !important;} */
+    .navbar-brand img{width: 180px !important;}
+    /*  */
+    .left-jioning-number h4{font-size: 2.2rem !important; word-spacing: normal !important;}
+    /* .jioning-form {padding: 5px 8px !important;font-size: 16px !important;} */
+    .main-jioning-number {
+    font-size: 1.2rem !important;
+    }
+    .jion-btn{margin-top: 5px !important;padding: 16px 60px !important;}
+    
+        .jion-btn {
+            margin-top: 5px !important;
+            padding: 9px 51px !important;
+            display: block !important;
+            margin: auto !important;
+            margin-top: 20px !important;
+            font-size: 16px !important;
+            margin-bottom: 20px !important;
+        }
+        .custom-section h2{font-size: 20px !important;margin-left: -20px !important;}
+        
+        .joining-number{margin-top: 10px !important;}
+        .jioning-form { 
+            height: 54px !important;
+            width: 200px !important;
+            font-size: 16px !important;
+        }
+        
+        .right-btn{padding: 8px;}
+        .Necesitas-content-body h4{font-size: 40px !important;}
+        .need-number .form-select{margin-top: -28px !important;width: 130px !important;font-size: 20px !important;}
+        .left-jioning-number h4 {
+            font-size: 1.9rem !important;
+            word-spacing: normal !important;
+        }
+        .owl-nav {
+            position: absolute !important;
+            top: -60px !important;
+            right: -40px !important;
+            width: 100px !important;
+            margin-top: 8px !important;
+        }
+        .joining-section{margin-top: 50px !important;}
+        .form-heading p{line-height: normal !important;font-size: 20px !important;}
+        .form-heading{padding: 5px 5px !important;}
+        .form-content{padding: 6px 10px !important;} 
+
+        #form-layout-style .inner1-number input{width: 70% !important;}
+         
+         #form-three-child > div.col-md-6.page-1-form3-A > div.inner-form-number label{font-size: 16px !important;}
+         .joining-number .custom-select-wrapper {width: 170px !important; margin-left: 10px !important;}
+         #right-jioing-number{font-size: 16px !important;}
+         .how-works{padding: 14px 5px !important;}
+         .back-home-btn{padding: 10px 14px !important;}
+        
+    }
+
+
+/*  */
+.mobile{display:none!important;}
+@media (max-width:992px) {
+    .mobile{display:block!important;}
+ 
+    .desktop{display:none !important ;}
+    .hide-on-mbl{display: none !important;}
+        
+    }
+    @media (max-width:375px) {
+        .Necesitas-content-body h4{font-size: 34px !important;}
+        .right-btn{padding: 8px !important;}
+        .jioning-form {
+            height: 54px !important;
+            width: 148px !important;
+            font-size: 15px !important;
+            padding: 0px !important;
+        }
+        .left-jioning-number h4 {
+            font-size: 1.6rem !important;
+            word-spacing: normal !important;
+        }
+        
+        
+    }

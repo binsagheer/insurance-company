@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Verification</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css"> </head>
+
+<body>
+	<!-- form header -->
+	<div class="overlay" id="particleContainer"></div>
+	<!-- Place overlay div here -->
+	<div class="form-header container-fluid px-5">
+		<div class="form-brand ms-auto"> <img src="images/mobile-logo.png" width="180px" alt=""> </div>
+	</div>
+	<!-- End form header -->
+	<!-- Form 1 -->
+	<div class="container" id="form-layout-style">
+		<div class="form1-body form-content active" id="form1">
+			<div class="form-heading">
+				<p> <span style="color: white;padding-right: 5px;">1.</span>Datos de identicacion de la o el derechohabiente </p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 page-1-side-A">
+					<form>
+						<input type="text" id="nombre" placeholder="Carlos Roberto">
+						<label for="nombre">Nombres<span class="required">*</span></label>
+						<input type="text" id="apellidoPaterno" placeholder="Becerra">
+						<label for="apellidoPaterno">Apellido Paterno<span class="required">*</span></label>
+						<input type="text" id="apellidoMaterno" placeholder="Tella">
+						<label for="apellidoMaterno">Apellido Materno<span class="required">*</span></label>
+						<input type="text" id="tipoIdentificacion" placeholder="INE">
+						<label for="tipoIdentificacion">Tipo de Identificación</label>
+						<input type="number" id="fechaValidez" placeholder="0331502679145">
+						<label for="numeroIdentificacion">Número de Identificación</label>
+						<div class="date-inputs">
+							<input type="text" class="active" id="numeroIdentificacion" placeholder="00">
+							<input type="text" placeholder="Mes">
+							<input type="text" placeholder="Año"> </div>
+						<label for="fechaValidez">Fecha de validez de identificación</label>
+					</form>
+				</div>
+				<div class="col-md-6 page-1-side-B">
+					<div class="form1-body">
+						<form action="">
+							<input type="text" id="nss" placeholder="81119000989">
+							<label for="nss">NSS<span class="required">*</span></label>
+							<input type="text" id="curp" placeholder="BECT900123MCYNG09">
+							<label for="curp">CURP<span class="required">*</span></label>
+							<input type="text" id="rfc" placeholder="BETC900721400">
+							<label for="rfc">RFC<span class="required">*</span></label>
+							<input type="text" id="telefono" placeholder="52 5566 2316">
+							<label for="telefono">Teléfono</label>
+							<input type="email" id="correo" placeholder="art1008000@gmail.com">
+							<label for="correo">Correo electrónico</label>
+							<div class="gender-inputs">
+								<input type="text" class="active" value="masculino" id="genero" placeholder="Masculino">
+								<input type="text" value="femenino" placeholder="Femenino"> </div>
+							<label for="genero">Género</label>
+							<div class="custom-select-wrapper">
+								<select id="estadoCivil">
+									<option value="casado">Casado</option>
+									<option value="soltero">Soltero</option>
+								</select> <i class="fa-solid fa-caret-down  custom-dropdown-icon"></i> </div>
+							<label for="estadoCivil">Estado civil</label>
+						</form>
+					</div>
+				</div>
+			</div>
+          
+            <button class="next-btn" onclick="nextForm(1)"> SIGUIENTE <i class="fas fa-arrow-right"></i> </button>
+
+        </div>
+
+            <!-- END OF FOTM 1 -->
+   
+			<!-- form 2 of page  first  -->
+			<div class="row form-content fomr2-page1" id="form2">
+				<div class="form2-body">
+					<div class="form-heading">
+						<p> <span style="color: white;padding-right: 5px;">2.</span> Datos de la empresa en la que labora la o el derechohabiente </p>
+					</div>
+				</div>
+				<div class="col-md-6 page-1-form2-A">
+					<input type="text" id="nombreEmpresa" placeholder="Kreattive" required>
+					<label for="nombreEmpresa">Nombre de la empresa <span class="required">*</span></label>
+				</div>
+				<div class="col-md-6 page-1-form2-B">
+					<input type="text" id="telefono" placeholder="5537334748" required>
+					<label for="telefono">Teléfono de la empresa donde trabaja <span class="required">*</span></label>
+				</div>
+			
+			<!-- form-3 -->
+			<div class="row fomr3-page1" id="form-three-child">
+				<div class="form3-body">
+					<div class="form-heading">
+						<p> <span style="color: white;padding-right: 5px;">3.</span>. Datos de la vivienda a mejorar </p>
+					</div>
+				</div>
+				<div class="col-md-6 page-1-form3-A">
+					<label style="margin-block: 10px;" for="vivienda">La vivienda para mejorar es</label>
+					<div class="custom-select-wrapper">
+						<select id="Propia">
+							<option value="casado">Propia</option>
+							<option value="soltero">vivienda</option>
+						</select> <i class="fa-solid fa-caret-down  custom-dropdown-icon"></i> </div>
+					<input type="text" id="calle" placeholder="Tres" required>
+					<label for="calle">Calle <span class="required">*</span></label>
+				 
+                        <div class="inner-form-number">
+                            <div class="inner1-number">
+                                <input type="text" id="numeroExterior" placeholder="705">
+                                <label for="numeroExterior">Número exterior <span class="required">*</span></label>
+                            </div>
+                            <div class="inner2-number">
+                                <input type="text" id="numeroExterior" placeholder="1080">
+                                <label for="numeroExterior">Número exterior <span class="required">*</span></label>
+                            </div>
+
+                        </div>
+                        <div class="inner-form-batch">
+                            <div class="inner1-number">
+                                <input type="text" id="lote" placeholder="B16">
+                                <label for="lote">Lote <span class="required"></span></label>
+                                
+                            </div>
+                            <div class="inner2-number">
+                                <input type="text" id="manzana" placeholder="A2">
+                                <label for="manzana">Manzana <span class="required"></span></label> 
+                            </div>
+
+                        </div>
+</div>
+				<div class="col-md-6 page-1-form3-B">
+					<div class="inner-form-Entity">
+						<div class="inner1-number">
+							<input type="text" id="entidad" placeholder="Cuernavaca">
+							<label for="entidad">Entidad <span class="required">*</span></label>
+						</div>
+						<div class="inner2-number">
+							<input type="text" id="codigoPostal" placeholder="62440">
+							<label for="codigoPostal">Código Postal <span class="required">*</span></label>
+						</div>
+					</div>
+					<input type="text" id="municipio" placeholder="CuernavacaCuernavaca">
+					<label for="municipio">Municipio <span class="required">*</span></label>
+					<input type="text" id="folioAcuse" placeholder="123456">
+					<label for="folioAcuse">Número de folio del acuse de carga de evidencia inicial de la mejora </label>
+				</div>
+			</div>
+            <button class="prev-btn" onclick="prevForm(2)"> <i class="fas fa-arrow-left"></i> Previous </button>
+			<button class="next-btn" onclick="nextForm(2)"> SIGUIENTE <i class="fas fa-arrow-right"></i> </button>
+        </div>
+		
+		<!--   END OF       Form 2 -->
+
+
+
+		<div class="form-content" id="form3">
+			<div class="form-heading">
+				<p> <span style="color: white;padding-right: 5px;">4.</span>Datos de identicacion de la o el derechohabiente </p>
+			</div>
+			<p class="short-note"><span class="required" style="padding-right: 5px;">*</span>Campos obligatoriosp</p>
+		<div class="row form6-body">
+			<div class="form6-bodyA col-md-6">
+				<input type="text" id="montoCredito" placeholder="$75,000">
+				<label for="montoCredito">Monto del crédito solicitado <span class="required"></span></label>
+				<input type="text" id="plazoSolicitado" placeholder="5 años">
+				<label for="plazoSolicitado">Plazo solicitado en años <span class="required">*</span></label> <span class="short-note">Máximo 5 años Repara, máximo 10 años renueva</span>
+				<br>
+				<br>
+				<p class="destination">Destino de los recursos</p>
+				<p class="amount-details"> Porcentaje del monto de crédito otorgado para pago de mano de obra para las reparaciones, ampliaciones o mejoras de la vivienda que habito</p>
+				<!--  -->
+				<input type="text" id="maximoCredito" placeholder="20%">
+				<label for="maximoCredito">Máximo 20% del monto del crédito otorgado</label>
+				<br>
+				<p class="amount-geal">Porcentaje del monto de crédito otorgado para pago de titulación de vivienda a mi nombre presentando previa cotización emititd por el notario público a cargo del trámite de titulación.</p>
+				<br>
+				<input type="text" id="maximoCredito" placeholder="30%">
+				<label for="maximoCredito">Máximo 20% del monto del crédito otorgado</label>
+			</div>
+			<!--  -->
+			<div class="form6-bodyB col-md-6">
+				<div class="custom-select-wrapper">
+					<select id="Mejoravit">
+						<option value="casado">Renueva</option>
+						<option value="soltero">Mejoravit</option>
+					</select> <i class="fa-solid fa-caret-down  custom-dropdown-icon"></i> </div>
+				<label for="Mejoravit">Mejoravit<span class="required">*</span></label>
+				<!--  -->
+				<div class="custom-select-wrapper">
+					<select id="Campeche">
+						<option value="casado">Campeche</option>
+						<option value="soltero">Mejoravit</option>
+					</select> <i class="fa-solid fa-caret-down  custom-dropdown-icon"></i> </div>
+				<label for="Campeche">CESI<span class="required">*</span></label>
+				<br>
+				<br>
+				<input type="text" id="cuentaClabe" placeholder="123456987">
+				<label for="cuentaClabe">Cuenta CLABE de la notaría a la que realizará el pago <span class="required">*</span></label>
+				<!--  -->
+				<input type="text" id="cuernavaca" placeholder="Municipio">
+				<label for="cuernavaca">Cuernavaca</label>
+				<input type="text" id="folioAcuse" placeholder="12346">
+				<label for="folioAcuse">Número de folio del acuse de carga de evidencia inicial de la mejora</label>
+			</div>
+    </div>
+    <button class="prev-btn" onclick="prevForm(3)"> <i class="fas fa-arrow-left"></i> Previous </button>
+    <button class="next-btn" onclick="nextForm(3)"> SIGUIENTE <i class="fas fa-arrow-right"></i> </button>
+</div>
+<!-- END OF FORM 3 -->
+
+
+			<!-- Form 4 -->
+			<div class="form5-container form-content" id="form4">
+				<div class="form-heading">
+					<p> <span style="color: white;padding-right: 5px;">5.</span>. Referencias familiarese </p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 border-center page-2-form5-A">
+						<h4 class="inner-form-heading">Primer referenci</h4>
+						<input type="text" id="cuentaClabe" placeholder="123456987">
+						<label for="cuentaClabe">Cuenta CLABE de la notaría a la que realizará el pago <span class="required">*</span></label>
+						<!--  -->
+						<input type="text" id="cuentaClabe" placeholder="5537335748g">
+						<label for="cuentaClabe">Cuenta CLABE de la notaría a la que realizará el pago <span class="required">*</span></label>
+						<!--  -->
+						<input type="text" id="telefono" placeholder="5537335748">
+						<label for="telefono">Teléfono <span class="required">*</span></label>
+						<!--  -->
+						<input type="text" id="celular" placeholder="7773121869">
+						<label for="celular">Celular</label>
+						<!--  -->
+					</div>
+					<!--  -->
+					<div class="col-md-6  page-2-form5-A">
+						<h4 class="inner-form-heading">Primer referencia</h4>
+						<input type="text" id="nombreCompleto" placeholder="Elisa de la Fuente">
+						<label for="nombreCompleto">Nombre completo<span class="required">*</span></label>
+						<input type="text" id="telefono" placeholder="5537335768">
+						<label for="telefono">Teléfono</label>
+						<input type="text" id="celular" placeholder="7894512">
+						<label for="celular">Celular</label>
+					</div>
+				</div>
+        
+		
+			<!-- Form 5 -->
+			<div class="form5-container">
+				<div class="form-heading">
+					<p> <span style="color: white;padding-right: 5px;">6.</span>. Referencias familiarese </p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 page-2-form6-A">
+						<input type="text" id="parentesco" placeholder="Madre">
+						<label for="parentesco">Parentesco<span class="required">*</span></label>
+						<input type="text" id="beneficiarioApellidoPaterno" placeholder="5537335748">
+						<label for="beneficiarioApellidoPaterno">Beneficiario apellido paterno<span class="required">*</span></label>
+					</div>
+					<div class="col-md-6 d-flex align-items-end page-2-form6-B">
+						<div>
+							<input type="text" id="beneficiarioApellidoPaterno" placeholder="5537335748">
+							<label for="beneficiarioApellidoPaterno">Beneficiario apellido paterno<span class="required">*</span></label>
+						</div>
+					</div>
+				</div>
+				
+					
+				
+			</div>
+            <button class="prev-btn" onclick="prevForm(4)"> <i class="fas fa-arrow-left"></i> Previous </button>
+					<button class="next-btn" onclick="submitForm()">Submit <i class="fas fa-check"></i></button>
+		</div>
+	</div>
+    
+	<div class="popup" id="successPopup">
+		<h2>Thank you for your submission!</h2>
+		<p>Your form has been successfully submitted.</p> <a href="index.html" class="back-home-btn">Back to Home</a>
+		<!-- New Back to Home button -->
+	</div>
+	<!--  -->
+	<!-- FOOTER -->
+	<section class="footer">
+		<div class="container-fluid px-5 footer-body"> <img src="images/mobile-logo.png" alt="">
+			<di class="footer-body-content">
+				<p>(55) 8128-9583 / (55) 7822-8820 / atencion@prestanomico.com</p>
+				<p>Avenida Insurgentes Sur No. 1425, Piso 9, Ocina 9D, Col. Insurgentes Mixcoac, Delegación Benito Juárez, C.P. 03920 CDMX</p>
+				<p>Prestanómico SAPI de CV. Todos los derechos reservados 2022</p>
+			</di>
+			<div class="footer-nav-link">
+				<li class="nav-item"> <a class="nav-link" href="#">Términos y Condiciones</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Aviso de Privacidad</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Servicio de Cobranza</a> </li>
+			</div>
+		</div>
+		<div class="social-icons"> <a href="https://wa.me/your-number" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a> <a href="https://x.com/your-profile" target="_blank" class="icon x"><i class="fab fa-x-twitter"></i></a> <a href="https://pinterest.com/your-profile" target="_blank" class="icon pinterest"><i class="fab fa-pinterest"></i></a> <a href="mailto:your-email@gmail.com" class="icon gmail"><i class="fas fa-envelope"></i></a> </div>
+	</section>
+	<section class="mbl-footer container-fluid">
+		<div class="mbl-footer-body">
+			<div class="footer-logo"> <img src="images/footer-logo.png" width="80px" alt=""> </div>
+			<div class="copy-right">
+				<p class="rights">LEGALES</p>
+				<p> <span class="year">©2024</span> <span class="company-A">Solu</span> <span class="company-B">Presta</span> </p>
+			</div>
+		</div>
+		<div class="social-icons"> <a href="https://wa.me/your-number" target="_blank" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://x.com/your-profile" target="_blank" class="icon x"> <i class="fab fa-twitter"></i> </a> <a href="https://pinterest.com/your-profile" target="_blank" class="icon pinterest"><i class="fab fa-pinterest"></i></a> <a href="mailto:your-email@gmail.com" class="icon gmail"><i class="fas fa-envelope"></i></a> </div>
+	</section>
+	<!--  -->
+	<!-- Your page content -->
+	<div class="overlay" id="particleContainer"></div>
+	<!-- Place overlay div here -->
+</body>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+let currentForm = 5;
+
+function nextForm(form) {
+	document.getElementById('form' + form).classList.remove('active');
+	document.getElementById('form' + (form + 1)).classList.add('active');
+}
+
+function prevForm(form) {
+	document.getElementById('form' + form).classList.remove('active');
+	document.getElementById('form' + (form - 1)).classList.add('active');
+}
+
+function submitForm() {
+	document.getElementById('form4').classList.remove('active');
+	document.getElementById('successPopup').style.display = 'block';
+}
+// // for gender active class change  
+document.addEventListener('DOMContentLoaded', function() {
+	// Add 'active' class to the first input
+	const firstInput = document.querySelector('#form-layout-style .gender-inputs input');
+	firstInput.classList.add('active');
+	// Remove 'active' class when any input is focused
+	const inputs = document.querySelectorAll('#form-layout-style .gender-inputs input');
+	inputs.forEach(input => {
+		input.addEventListener('focus', function() {
+			firstInput.classList.remove('active'); // Remove 'active' from the first input
+		});
+	});
+});
+// for date active class change  
+document.addEventListener('DOMContentLoaded', function() {
+	// Add 'active' class to the first input in .date-inputs
+	const firstDateInput = document.querySelector('#form-layout-style .date-inputs input');
+	firstDateInput.classList.add('active');
+	// Remove 'active' class when any input is focused
+	const dateInputs = document.querySelectorAll('#form-layout-style .date-inputs input');
+	dateInputs.forEach(input => {
+		input.addEventListener('focus', function() {
+			firstDateInput.classList.remove('active'); // Remove 'active' from the first input
+		});
+	});
+});
+// 
+// Function to show popup and overlay
+document.getElementById('submitButton').addEventListener('click', function() {
+	// Show the popup
+	document.getElementById('successPopup').style.display = 'block';
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
